@@ -1,0 +1,26 @@
+html{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: rgb(10, 94, 143);
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    background: rgb(22, 22, 22);
+    margin-top: 0px;
+    padding: 5px;
+}
+
+nav>ul{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+}
