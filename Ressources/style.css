@@ -7,7 +7,7 @@ body{
     background: #1e93cc;
     margin: 0px;
     padding: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     align-items: center;
     vertical-align: middle;
@@ -32,8 +32,8 @@ nav a{
 }
 
 nav>ul {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     display: grid;
     grid-template-columns: repeat(8, 10%) 1fr;
     grid-template-rows: 1fr;
@@ -49,7 +49,6 @@ nav>ul>li:nth-child(5) {grid-area: 1 / 5 / 2 / 6;}
 nav>ul>li:nth-child(6) {grid-area: 1 / 6 / 2 / 7;}
 nav>ul>li:nth-child(7) {grid-area: 1 / 7 / 2 / 8;}
 nav>ul>li:nth-child(8) {grid-area: 1 / 8 / 2 / 9;}
-
 nav>ul>li:nth-child(9) { /* Log in */ 
     grid-area: 1 / 9 / 2 / 10;
     text-align: right;
@@ -150,7 +149,27 @@ aside>button{
     border: none;
 }
 
-img {
+aside img {
     padding-top:5px;
     background-color: transparent;
+}
+
+ul.partenaires{
+    display: block;
+}
+
+li.partenaires{
+    display: flex;
+}
+
+footer{
+    display: block;
+}
+
+footer>ul{
+    display: flex;
+}
+
+footer>ul>li:last-child{
+    float: right;
 }
