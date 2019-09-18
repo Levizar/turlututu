@@ -24,7 +24,6 @@ nav a{
     color: rgb(255, 255, 255);
 }
 
-
 nav>ul {
     margin-left: 5%;
     margin-right: 5%;
@@ -33,6 +32,8 @@ nav>ul {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 nav>ul>li:nth-child(1) {grid-area: 1 / 1 / 2 / 2;}
@@ -47,4 +48,10 @@ nav>ul>li:nth-child(8) {grid-area: 1 / 8 / 2 / 9;}
 nav>ul>li:nth-child(9) { /* Log in */ 
     grid-area: 1 / 9 / 2 / 10;
     text-align: right;
+}
+
+svg{
+    width: 5%;
+    margin: 0px;
+    margin-right: 5%;
 }
