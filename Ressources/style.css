@@ -68,7 +68,7 @@ header{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: 20vh;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 /* MODIFIER LE MARGIN BOTTOM DU HEADER !!*/
@@ -99,4 +99,9 @@ header>button{
 h2{
     background-color: white;
     color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-weight: 100;
 }
