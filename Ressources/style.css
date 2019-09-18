@@ -12,6 +12,7 @@ body{
     align-items: center;
     vertical-align: middle;
     color: white;
+    align-items: center;
 }
 
 ul {
@@ -20,7 +21,7 @@ ul {
 }
 
 nav{
-    background: rgb(22, 22, 22);
+    background: #333333;
     margin-top: 0px;
     padding: 15px;
 }
@@ -73,24 +74,21 @@ header{
 /* MODIFIER LE MARGIN BOTTOM DU HEADER !!*/
 
 header>h1:nth-child(1){
-    grid-area: 1 / 4 / 2 / 8;
-    
+    grid-area: 1 / 4 / 2 / 8;    
 }
 header>h1:nth-child(2){
     grid-area: 2 / 4 / 3 / 8;
 }
 
-button{
-    background-color: orangered;
-    border-bottom-style: solid white 5px;
+header>button{
+    grid-area: 3 / 4 / 4 / 8;
+    background-color: #e99002;
+    border: solid white 2px;
     padding: 5px;
+    margin: 5px;
     color: white;
     border-radius: 5px;
     height: 60px;
-}
-
-header>button{
-    grid-area: 3 / 4 / 4 / 8;
 }
 
 h2{
