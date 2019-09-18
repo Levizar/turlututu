@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background: rgb(10, 94, 143);
+    background: #1e93cc;
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
@@ -52,6 +52,7 @@ nav>ul>li:nth-child(9) { /* Log in */
 
 svg{
     width: 5%;
+    min-width: 12px;
     margin: 0px;
     margin-right: 5%;
 }
