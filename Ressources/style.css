@@ -68,7 +68,7 @@ header{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: 20vh;
-    margin-bottom: 40vh;
+    margin-bottom: 200px;
 }
 
 /* MODIFIER LE MARGIN BOTTOM DU HEADER !!*/
@@ -78,6 +78,11 @@ header>h1:nth-child(1){
 }
 header>h1:nth-child(2){
     grid-area: 2 / 4 / 3 / 8;
+    font-size: 22px;
+}
+
+header>h1:nth-child(4){
+    grid-area: 1 / 1 / 4 / 4;
 }
 
 header>button{
