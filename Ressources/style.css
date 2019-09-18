@@ -28,6 +28,7 @@ nav{
 
 nav a{
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 nav>ul {
@@ -74,7 +75,8 @@ header{
 /* MODIFIER LE MARGIN BOTTOM DU HEADER !!*/
 
 header>h1:nth-child(1){
-    grid-area: 1 / 4 / 2 / 8;    
+    grid-area: 1 / 4 / 2 / 8;
+    z-index: -2;
 }
 header>h1:nth-child(2){
     grid-area: 2 / 4 / 3 / 8;
@@ -83,6 +85,7 @@ header>h1:nth-child(2){
 
 header>h1:nth-child(4){
     grid-area: 1 / 1 / 4 / 4;
+    z-index: -1;
 }
 
 header>button{
@@ -104,4 +107,50 @@ h2{
     padding-top: 1vh;
     padding-bottom: 1vh;
     font-weight: 100;
+}
+
+
+ul.middle{
+    display: flex;
+    margin-top:10px;
+}
+
+ul.middle>li{
+    margin: 20px;
+}
+
+ul.middle>li>p:first-child{
+    font-size: 20px;
+}
+
+ul.middle>li>p:nth-child(2){
+    text-align: left;
+}
+
+aside {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(22,88,130);
+    position: fixed;
+    bottom:250px;
+    right:15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+aside:hover {
+    background-color: rgb(70,134,171);
+}
+
+aside>button{
+    background-color: transparent;
+    border: none;
+}
+
+img {
+    padding-top:5px;
+    background-color: transparent;
 }
