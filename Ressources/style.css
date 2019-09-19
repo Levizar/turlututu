@@ -21,12 +21,13 @@ ul {
 }
 
 nav{
+    display: block;
     background: #333333;
     margin-top: 0px;
     padding: 15px;
 }
 
-nav a{
+nav a, footer a{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -39,6 +40,12 @@ nav>ul {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+
+li.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 nav>ul>li:nth-child(1) {grid-area: 1 / 1 / 2 / 2;}
@@ -59,6 +66,27 @@ svg{
     min-width: 12px;
     margin: 0px;
     margin-right: 5%;
+}
+
+button{
+    border: solid white 2px;
+    padding: 15px;
+    margin: 7px;
+    color: white;
+    border-radius: 13px;
+    height: 60px;
+}
+
+button:hover{
+    filter: grayscale(50%);
+}
+
+button.start_building{
+    background-color: #e99002;
+}
+
+button.standard{
+    background-color: #165882;
 }
 
 header{
@@ -87,16 +115,7 @@ header>h1:nth-child(4){
     z-index: -1;
 }
 
-header>button{
-    grid-area: 3 / 4 / 4 / 8;
-    background-color: #e99002;
-    border: solid white 2px;
-    padding: 5px;
-    margin: 5px;
-    color: white;
-    border-radius: 5px;
-    height: 60px;
-}
+header>button{grid-area: 3 / 4 / 4 / 8;}
 
 h2{
     background-color: white;
@@ -107,7 +126,6 @@ h2{
     padding-bottom: 1vh;
     font-weight: 100;
 }
-
 
 ul.middle{
     display: flex;
@@ -147,6 +165,7 @@ aside:hover {
 aside>button{
     background-color: transparent;
     border: none;
+    padding: 0;
 }
 
 aside img {
@@ -155,7 +174,14 @@ aside img {
 }
 
 ul.partenaires{
-    display: block;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #bbbbbb;
+    align-items: center;
 }
 
 li.partenaires{
@@ -164,12 +190,39 @@ li.partenaires{
 
 footer{
     display: block;
+    background-color: #333333;
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
 }
 
 footer>ul{
     display: flex;
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+
+footer>ul>div{
+    display: inline-flex;
+    margin: 10px;
+    width: 40%;
+}
+
+footer>ul>div>li{
+    margin: auto;
+    width: 20%;
 }
 
 footer>ul>li:last-child{
-    float: right;
+    margin: 10px;
+    width: 60%;
+    text-align: right;
+}
+
+div.end_button{
+    background-color: #eeeeee;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px; 
 }
