@@ -1,4 +1,5 @@
-# turlututu
+# turlututu #
 
+The goal of this ripositery is to replicate the layout of the site turlututu.io
 
-The goal of this ripo is to replicate the layout of the site turlututu.
+here is [the page](https://levizar.github.io/turlututu/)
