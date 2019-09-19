@@ -122,8 +122,8 @@ h2{
     color: black;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-weight: 100;
 }
 
@@ -221,8 +221,13 @@ footer>ul>li:last-child{
 }
 
 div.end_button{
-    background-color: #eeeeee;
+    margin-top: 0;
+    background-color: #ffffff;
     height: auto;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 20px; 
+}
+
+.no_bottom_maring{
+    margin-bottom: 0;
 }
