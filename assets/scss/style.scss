@@ -1,30 +1,29 @@
 html{
     margin: 0px;
     padding: 0px;
+    body{
+        background: #1e93cc;
+        margin: 0px;
+        padding: 0px;
+        font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        color: white;
+        align-items: center;
+    }
 }
 
-body{
-    background: #1e93cc;
-    margin: 0px;
-    padding: 0px;
-    font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-align: center;
-    align-items: center;
-    vertical-align: middle;
-    color: white;
-    align-items: center;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-}
 
 nav{
     display: block;
     background: #333333;
     margin-top: 0px;
     padding: 15px;
+    ul {
+        list-style-type: none;
+        margin: 0;
+    }
 }
 
 nav a, footer a{
