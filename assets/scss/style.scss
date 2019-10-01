@@ -1,3 +1,5 @@
+@import "_nav-ul-9li.scss";
+
 html{
     margin: 0px;
     padding: 0px;
@@ -11,53 +13,19 @@ html{
         vertical-align: middle;
         color: white;
         align-items: center;
-        nav{
-            display: block;
-            background: #333333;
-            margin-top: 0px;
-            padding: 15px;
-            ul {
-                list-style-type: none;
-                margin: 0;
-            }
-        }
     }
 }
 
+ul{
+    list-style-type: none;
+}
 
 
-nav a, footer a{
+footer {
+    a{
     color: rgb(255, 255, 255);
     text-decoration: none;
-}
-
-nav>ul {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    display: grid;
-    grid-template-columns: repeat(8, 10%) 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-li.nav-menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-nav>ul>li:nth-child(1) {grid-area: 1 / 1 / 2 / 2;}
-nav>ul>li:nth-child(2) {grid-area: 1 / 2 / 2 / 3;}
-nav>ul>li:nth-child(3) {grid-area: 1 / 3 / 2 / 4;}
-nav>ul>li:nth-child(4) {grid-area: 1 / 4 / 2 / 5;}
-nav>ul>li:nth-child(5) {grid-area: 1 / 5 / 2 / 6;}
-nav>ul>li:nth-child(6) {grid-area: 1 / 6 / 2 / 7;}
-nav>ul>li:nth-child(7) {grid-area: 1 / 7 / 2 / 8;}
-nav>ul>li:nth-child(8) {grid-area: 1 / 8 / 2 / 9;}
-nav>ul>li:nth-child(9) { /* Log in */ 
-    grid-area: 1 / 9 / 2 / 10;
-    text-align: right;
+    }
 }
 
 svg{
@@ -74,19 +42,18 @@ button{
     color: white;
     border-radius: 13px;
     height: 60px;
+    &:hover{
+        filter: grayscale(50%);
+    }
+    &.start_building{
+        background-color: #e99002;
+    }
+    
+    &.standard{
+        background-color: #165882;
+    }
 }
 
-button:hover{
-    filter: grayscale(50%);
-}
-
-button.start_building{
-    background-color: #e99002;
-}
-
-button.standard{
-    background-color: #165882;
-}
 
 grid{
     display: grid;
@@ -202,6 +169,7 @@ footer>ul{
     width: 100%;
     margin:0;
     padding: 0;
+
 }
 
 footer>ul>div{
