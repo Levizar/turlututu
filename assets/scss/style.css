@@ -17,14 +17,14 @@ html body {
   align-items: center;
 }
 
-nav {
+html body nav {
   display: block;
   background: #333333;
   margin-top: 0px;
   padding: 15px;
 }
 
-nav ul {
+html body nav ul {
   list-style-type: none;
   margin: 0;
 }
