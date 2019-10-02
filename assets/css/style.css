@@ -1,17 +1,36 @@
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+html body {
+  background: #1e93cc;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: white;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background: #333333;
-  margin-top: 0px;
-  padding: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 nav ul {
   display: inherit;
+  height: 100%;
   margin: 0;
   margin-left: 2.5%;
   margin-right: 2.5%;
+  margin-top: 0;
+  margin-bottom: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (10%)[8] 1fr;
@@ -111,25 +130,24 @@ nav ul li:nth-child(9) {
 nav ul li a {
   color: white;
   text-decoration: none;
-}
-
-html {
-  margin: 0px;
-  padding: 0px;
-}
-
-html body {
-  background: #1e93cc;
-  margin: 0px;
-  padding: 0px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  width: 100%;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  vertical-align: middle;
+}
+
+button {
+  border: solid white 2px;
+  padding: 15px;
+  margin: 7px;
   color: white;
-  align-items: center;
+  border-radius: 13px;
+  height: 60px;
+  background-color: #e99002;
+}
+
+button:hover {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
 ul {
@@ -143,29 +161,11 @@ svg {
   margin-right: 5%;
 }
 
-button {
-  border: solid white 2px;
-  padding: 15px;
-  margin: 7px;
-  color: white;
-  border-radius: 13px;
-  height: 60px;
-}
-
-button:hover {
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
-}
-
-button.start_building {
-  background-color: #e99002;
-}
-
 button.standard {
   background-color: #165882;
 }
 
-grid {
+section.grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (10%)[10];
@@ -178,7 +178,7 @@ grid {
   margin-bottom: 150px;
 }
 
-grid h1:nth-child(1) {
+section.grid h1:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 4;
@@ -187,7 +187,7 @@ grid h1:nth-child(1) {
   z-index: -2;
 }
 
-grid h1:nth-child(2) {
+section.grid h1:nth-child(2) {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   -ms-grid-column: 4;
@@ -196,7 +196,7 @@ grid h1:nth-child(2) {
   font-size: 22px;
 }
 
-grid h1:nth-child(4) {
+section.grid h1:nth-child(4) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
@@ -205,7 +205,7 @@ grid h1:nth-child(4) {
   z-index: -1;
 }
 
-grid button {
+section.grid button {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   -ms-grid-column: 4;
@@ -213,7 +213,7 @@ grid button {
   grid-area: 3 / 4 / 4 / 8;
 }
 
-grid h2 {
+section.grid h2 {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -221,7 +221,7 @@ grid h2 {
   grid-area: 4 / 1 / 5 / 11;
 }
 
-grid last {
+section.grid last {
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;

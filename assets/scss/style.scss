@@ -1,26 +1,10 @@
+@import "blue-body-set";
 @import "_nav-ul-9li.scss";
-
-html{
-    margin: 0px;
-    padding: 0px;
-    body{
-        background: #1e93cc;
-        margin: 0px;
-        padding: 0px;
-        font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        text-align: center;
-        align-items: center;
-        vertical-align: middle;
-        color: white;
-        align-items: center;
-    }
-}
+@import "button-orange-white";
 
 ul{
     list-style-type: none;
 }
-
-
 
 svg{
     width: 5%;
@@ -30,24 +14,12 @@ svg{
 }
 
 button{
-    border: solid white 2px;
-    padding: 15px;
-    margin: 7px;
-    color: white;
-    border-radius: 13px;
-    height: 60px;
-    &:hover{
-        filter: grayscale(50%);
-    }
-    &.start_building{
-        background-color: #e99002;
-    }
     &.standard{
         background-color: #165882;
     }
 }
 
-grid{
+section.grid{
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(6, 1fr) ;
