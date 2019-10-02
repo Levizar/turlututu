@@ -183,7 +183,7 @@ grid {
   margin-bottom: 150px;
 }
 
-grid > h1:nth-child(1) {
+grid h1:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 4;
@@ -192,7 +192,7 @@ grid > h1:nth-child(1) {
   z-index: -2;
 }
 
-grid > h1:nth-child(2) {
+grid h1:nth-child(2) {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   -ms-grid-column: 4;
@@ -201,7 +201,7 @@ grid > h1:nth-child(2) {
   font-size: 22px;
 }
 
-grid > h1:nth-child(4) {
+grid h1:nth-child(4) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
@@ -210,7 +210,7 @@ grid > h1:nth-child(4) {
   z-index: -1;
 }
 
-grid > button {
+grid button {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   -ms-grid-column: 4;
@@ -218,7 +218,7 @@ grid > button {
   grid-area: 3 / 4 / 4 / 8;
 }
 
-grid > h2 {
+grid h2 {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -226,7 +226,7 @@ grid > h2 {
   grid-area: 4 / 1 / 5 / 11;
 }
 
-grid > last {
+grid last {
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -251,15 +251,15 @@ ul.middle {
   margin-top: 10px;
 }
 
-ul.middle > li {
+ul.middle li {
   margin: 20px;
 }
 
-ul.middle > li > p:first-child {
+ul.middle li p:first-child {
   font-size: 20px;
 }
 
-ul.middle > li > p:nth-child(2) {
+ul.middle li p:nth-child(2) {
   text-align: left;
 }
 
@@ -287,7 +287,7 @@ aside:hover {
   background-color: #4686ab;
 }
 
-aside > button {
+aside button {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -329,7 +329,7 @@ footer {
   font-size: 14px;
 }
 
-footer > ul {
+footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,7 +338,7 @@ footer > ul {
   padding: 0;
 }
 
-footer > ul > div {
+footer ul div {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -346,12 +346,12 @@ footer > ul > div {
   width: 40%;
 }
 
-footer > ul > div > li {
+footer ul div li {
   margin: auto;
   width: 20%;
 }
 
-footer > ul > li:last-child {
+footer ul li:last-child {
   margin: 10px;
   width: 60%;
   text-align: right;

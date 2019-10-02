@@ -48,12 +48,10 @@ button{
     &.start_building{
         background-color: #e99002;
     }
-    
     &.standard{
         background-color: #165882;
     }
 }
-
 
 grid{
     display: grid;
@@ -63,27 +61,26 @@ grid{
     grid-row-gap: 0px;
     height: 25vh;
     margin-bottom: 150px;
+    h1{
+        &:nth-child(1){
+            grid-area: 1 / 4 / 2 / 8;
+            z-index: -2;
+        }
+        &:nth-child(2){
+            grid-area: 2 / 4 / 3 / 8;
+            font-size: 22px;
+        }
+        &:nth-child(4){
+            grid-area: 1 / 1 / 4 / 4;
+            z-index: -1;
+        }
+    }
+    button{grid-area: 3 / 4 / 4 / 8;}
+    
+    h2{grid-area: 4 / 1 / 5 / 11;}
+    
+    last{grid-area: 6 / 1 / 7 / 11;}
 }
-
-grid>h1:nth-child(1){
-    grid-area: 1 / 4 / 2 / 8;
-    z-index: -2;
-}
-grid>h1:nth-child(2){
-    grid-area: 2 / 4 / 3 / 8;
-    font-size: 22px;
-}
-
-grid>h1:nth-child(4){
-    grid-area: 1 / 1 / 4 / 4;
-    z-index: -1;
-}
-
-grid>button{grid-area: 3 / 4 / 4 / 8;}
-
-grid>h2{grid-area: 4 / 1 / 5 / 11;}
-
-grid>last{grid-area: 6 / 1 / 7 / 11}
 
 h2{
     background-color: white;
@@ -98,18 +95,15 @@ h2{
 ul.middle{
     display: flex;
     margin-top:10px;
-}
-
-ul.middle>li{
-    margin: 20px;
-}
-
-ul.middle>li>p:first-child{
-    font-size: 20px;
-}
-
-ul.middle>li>p:nth-child(2){
-    text-align: left;
+    li{
+        margin: 20px;
+        p:first-child{
+            font-size: 20px;
+        }
+        p:nth-child(2){
+            text-align: left;
+        }
+    }
 }
 
 aside {
@@ -124,21 +118,18 @@ aside {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-
-aside:hover {
-    background-color: rgb(70,134,171);
-}
-
-aside>button{
-    background-color: transparent;
-    border: none;
-    padding: 0;
-}
-
-aside img {
-    padding-top:5px;
-    background-color: transparent;
+    &:hover {
+        background-color: rgb(70,134,171);
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+    img {
+        padding-top:5px;
+        background-color: transparent;
+    }
 }
 
 ul.partenaires{
@@ -162,32 +153,28 @@ footer{
     width: 100%;
     margin: 0;
     font-size: 14px;
+    ul{
+        display: flex;
+        width: 100%;
+        margin:0;
+        padding: 0;
+        div{
+            display: inline-flex;
+            margin: 10px;
+            width: 40%;
+            li{
+                margin: auto;
+                width: 20%;
+            }
+        }
+        li:last-child{
+            margin: 10px;
+            width: 60%;
+            text-align: right;
+        }
+    }
 }
 
-footer>ul{
-    display: flex;
-    width: 100%;
-    margin:0;
-    padding: 0;
-
-}
-
-footer>ul>div{
-    display: inline-flex;
-    margin: 10px;
-    width: 40%;
-}
-
-footer>ul>div>li{
-    margin: auto;
-    width: 20%;
-}
-
-footer>ul>li:last-child{
-    margin: 10px;
-    width: 60%;
-    text-align: right;
-}
 
 div.end_button{
     margin-top: 0;
