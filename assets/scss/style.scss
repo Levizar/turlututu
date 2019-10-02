@@ -21,12 +21,6 @@ ul{
 }
 
 
-footer {
-    a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    }
-}
 
 svg{
     width: 5%;
@@ -75,11 +69,15 @@ grid{
             z-index: -1;
         }
     }
-    button{grid-area: 3 / 4 / 4 / 8;}
-    
-    h2{grid-area: 4 / 1 / 5 / 11;}
-    
-    last{grid-area: 6 / 1 / 7 / 11;}
+    button{
+        grid-area: 3 / 4 / 4 / 8;
+    }
+    h2{
+        grid-area: 4 / 1 / 5 / 11;
+    }
+    last{
+        grid-area: 6 / 1 / 7 / 11;
+    }
 }
 
 h2{
@@ -96,6 +94,7 @@ ul.middle{
     display: flex;
     margin-top:10px;
     li{
+        width: 50%;
         margin: 20px;
         p:first-child{
             font-size: 20px;
@@ -165,6 +164,10 @@ footer{
             li{
                 margin: auto;
                 width: 20%;
+                a{
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                }
             }
         }
         li:last-child{
@@ -175,7 +178,6 @@ footer{
     }
 }
 
-
 div.end_button{
     margin-top: 0;
     background-color: #ffffff;
@@ -184,6 +186,6 @@ div.end_button{
     padding-bottom: 20px; 
 }
 
-.no_bottom_maring{
+.no_bottom_marging{
     margin-bottom: 0;
 }

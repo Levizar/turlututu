@@ -136,11 +136,6 @@ ul {
   list-style-type: none;
 }
 
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
 svg {
   width: 5%;
   min-width: 12px;
@@ -252,6 +247,7 @@ ul.middle {
 }
 
 ul.middle li {
+  width: 50%;
   margin: 20px;
 }
 
@@ -351,6 +347,11 @@ footer ul div li {
   width: 20%;
 }
 
+footer ul div li a {
+  color: white;
+  text-decoration: none;
+}
+
 footer ul li:last-child {
   margin: 10px;
   width: 60%;
@@ -365,7 +366,7 @@ div.end_button {
   padding-bottom: 20px;
 }
 
-.no_bottom_maring {
+.no_bottom_marging {
   margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
