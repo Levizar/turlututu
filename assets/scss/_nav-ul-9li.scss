@@ -1,6 +1,11 @@
+$navbgcolor: #333333;
+$navFontS: 16px;
+$navTcol:rgb(255, 255, 255);
+$navFilter: sepia(1);
+
 nav{
     display: flex;
-    background: #333333;
+    background: $navbgcolor;
     margin-top: 0px;
     margin-bottom: 0;
     padding-left: 15px;
@@ -24,6 +29,7 @@ nav{
             background: inherit;
             height: 100%;
             list-style-type: none;
+            font-size: $navFontS;
             a{
                 background: inherit;
                 text-align: right;

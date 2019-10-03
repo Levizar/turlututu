@@ -1,8 +1,28 @@
-@import "blue-body-set";
+@import "_body-set.scss";
 @import "_nav-ul-9li.scss";
-@import "button-orange-white";
-@import "footer-black";
+@import "_button-orange-white.scss";
+@import "_footer.scss";
 
+
+// Nav variables
+$navbgcolor: #333333;
+$navFontS: 16px;
+$navTcol:rgb(255, 255, 255);
+$navFilter: sepia(1);
+
+// Body variables
+$bodyBgColor: #1e93cc;
+$bodyFontStack:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$bodyFontColor: white;
+
+// footer variables
+$ftbgcolor: #333333;
+$ftHfontS: 14px;
+$ftTcol:rgb(255, 255, 255);
+$ftFilter: sepia(1);
+
+
+// Principal SASS code
 ul{
     list-style-type: none;
 }

@@ -1,0 +1,16 @@
+$bodyBgColor: #1e93cc;
+$bodyFontStack:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$bodyFontColor: white;
+
+html{
+    margin: 0px;
+    padding: 0px;
+    body{
+        background: $bodyBgColor;
+        margin: 0px;
+        padding: 0px;
+        font-family: $bodyFontStack;
+        text-align: center;
+        color: $bodyFontColor;
+    }
+}
